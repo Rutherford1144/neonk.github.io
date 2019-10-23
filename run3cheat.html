@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<script>
+function solonggaybowser() {
+var coins = getCookie("coins");
+
+if (coins == null){
+  setCookie("coins", 0, 999999999999999);
+} else {
+  setTimeout(function(){
+    coins += 9999999;
+    setCookie("coins", coins, 999999999999999);
+  }, 60000);
+}
+}
+</script>
+</head>
+<body>
+
+<form>
+  <input type="button" value="Gay Bowser Time" onclick="msg()">
+</form>
+
+</body>
+</html>
