@@ -1,5 +1,12 @@
 <!DOCTYPE html>
 <html>
+<head>
+<style>
+body {
+background:lightblue;
+};
+</style>
+</head>
 <body>
 
 <h1>The Storage Object</h1>
@@ -32,7 +39,8 @@ function displayItems() {
   document.getElementById("demo").innerHTML = "";
   for (i = 0; i < localStorage.length; i++) {
   x = localStorage.key(i);
-  document.getElementById("demo").innerHTML += x + "<br>";
+  y = localStorage.getItem(x);
+  document.getElementById("demo").innerHTML += x + " == " + y + "<br><br>";
   }
 }
 </script>
